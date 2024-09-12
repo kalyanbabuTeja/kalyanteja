@@ -1,0 +1,1599 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+
+<head>
+	<!-- Basic need -->
+	<title>Venkat Photo Studio</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<link rel="profile" href="#">
+	<!-- <link rel="shortcut icon" href="images/custom/favicon.png"> -->
+    <!--Google Font-->
+    <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Dosis:400,700,500|Nunito:300,400,600' />
+	<!-- Mobile specific meta -->
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone-no">
+
+	<!-- CSS files -->
+	<link rel="stylesheet" href="css/plugins.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/fonts/Amersfoort.ttf"/>
+<style>
+	img.item-video {
+    height: 435px !important;
+}
+#gb-widget-2655 > * {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+    box-sizing: border-box !important;
+}
+.fiKefb {
+    display: flex;
+    margin: 7px;
+    position: relative;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    max-height: 50px;
+}
+.jmDuqF {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    order: 1;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.4) 2px 2px 6px;
+    transition: all 0.5s ease 0s;
+    position: relative;
+    z-index: 200;
+    display: block;
+    border: 0px;
+    background-color: rgb(77, 194, 71) !important;
+}
+.movie-items .movie-item .mv-img {
+    position: inherit !important;
+    z-index: 99999;
+	border: 1px dotted #ccc;
+	border-radius: 18px;
+}
+
+.video-background-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Makes sure the video covers the entire area */
+    z-index: -1; /* Ensures the video stays behind other content */
+}
+
+.content {
+    position: relative;
+    z-index: 1; /* Puts the content above the video */
+    color: white;
+    text-align: center;
+    top: 60%;
+    transform: translateY(-50%);
+}
+</style>
+</head>
+<body>
+<!--preloading-->
+<div id="preloader">
+    <img class="logo" src="images/logo.png" alt="" width="119" height="58">
+    <div id="status">
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<!--end of preloading-->
+<!--login form popup-->
+<div class="login-wrapper" id="login-content">
+    <div class="login-content">
+        <a href="#" class="close">x</a>
+
+        <form method="post" action="innerpage.html">
+        	<div class="row">
+        		 <label for="username">Welcome to Khammam:</label>
+				<p>Bhadrachalam is a census town in Bhadradri Kothagudem district in the Indian state of Telangana. It is an important Hindu pilgrimage town with the Bhadrachalam Temple of Lord Rama, situated on the banks of Godavari river.</p>
+				<img src="images/uploads/blogv21.jpg" alt="image"/>
+        	</div>
+           <div class="row">
+           	 <button type="submit">Go To Page <i class="fa fa-level-down" aria-hidden="true"></i></button></a>
+           </div>
+        </form>
+        <!-- <div class="row">
+        	<p>Or via social</p>
+            <div class="social-btn-2">
+            	<a class="fb" href="#"><i class="ion-social-facebook"></i>Facebook</a>
+            	<a class="tw" href="#"><i class="ion-social-twitter"></i>twitter</a>
+            </div>
+        </div> -->
+    </div>
+</div>
+<!--end of login form popup-->
+<!--signup form popup-->
+<div class="login-wrapper"  id="signup-content">
+    <div class="login-content">
+        <a href="#" class="close">x</a>
+        <h3>sign up</h3>
+        <form method="post" action="#">
+            <div class="row">
+                 <label for="username-2">
+                    Username:
+                    <input type="text" name="username" id="username-2" placeholder="Hugh Jackman" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" />
+                </label>
+            </div>
+
+            <div class="row">
+                <label for="email-2">
+                    your email:
+                    <input type="password" name="email" id="email-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+                </label>
+            </div>
+             <div class="row">
+                <label for="password-2">
+                    Password:
+                    <input type="password" name="password" id="password-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+                </label>
+            </div>
+             <div class="row">
+                <label for="repassword-2">
+                    re-type Password:
+                    <input type="password" name="password" id="repassword-2" placeholder="" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+                </label>
+            </div>
+           <div class="row">
+             <button type="submit">sign up</button>
+           </div>
+        </form>
+    </div>
+</div>
+<!--end of signup form popup-->
+
+<!-- BEGIN | Header -->
+<header class="ht-header">
+	<div class="container">
+		<nav class="navbar navbar-default navbar-custom">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header logo">
+				    <div class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					    <span class="sr-only">Toggle navigation</span>
+					    <div id="nav-icon1">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+				    </div>
+				    <a href="index.html"><img class="logo" src="images/logo.png" alt="" style="
+						width: 62%;
+						padding: 0px !important;
+						margin: 0px !important;
+					"></a>
+			    </div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse flex-parent" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav flex-child-menu menu-left">
+						<li class="hidden">
+							<a href="#page-top"></a>
+						</li>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="aboutus.html">About</a></li>
+
+
+						<li class="dropdown first">
+							<a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
+							Plan Your Stay <i class="fa fa-angle-down" aria-hidden="true"></i>
+							</a>
+							<ul class="dropdown-menu level1">
+								<li><a href="landing.html">Heritage Hotels</a></li>
+								<li><a href="404.html">Registed Hotels</a></li>
+								<li class="it-last"><a href="comingsoon.html">Coming soon</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Packages </a></li>
+						<li class="dropdown first">
+							<a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
+								To Begin Your Journey <i class="fa fa-angle-down" aria-hidden="true"></i>
+							</a>
+							<ul class="dropdown-menu level1">
+								<li><a href="landing.html">Vehicle Hire</a></li>
+								<!-- <li><a href="404.html">Registed Hotels</a></li>
+								<li class="it-last"><a href="comingsoon.html">Coming soon</a></li> -->
+							</ul>
+						</li>
+
+						
+					</ul>
+					<ul class="nav navbar-nav flex-child-menu menu-right">
+
+
+
+						<li class="dropdown first">
+							<a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown">
+							More <i class="fa fa-angle-down" aria-hidden="true"></i>
+							</a>
+							<ul class="dropdown-menu level1">
+								<li><a href="index-2.html">Banquest</a></li>
+								<li><a href="homev2.html">Cruise Banquest</a></li>
+								<li><a href="homev3.html">River Cruise</a></li>
+								<li><a href="testimonials.html">Boating</a> </li>
+								<li><a href="testimonials.html">Sound & Ligh</a> </li>
+							</ul>
+						</li>
+						<li><a href="contact.html">Contact</a></li>
+						<li class="btn signupLink"><a href="#">Log in</a></li>
+					</ul>
+				</div>
+			<!-- /.navbar-collapse -->
+	    </nav>
+
+	    <!-- top search form -->
+	    <!-- <div class="top-search">
+	    	<select>
+				<option value="united">TV show</option>
+				<option value="saab">Others</option>
+			</select>
+			<input type="text" placeholder="Search for a movie, TV Show or celebrity that you are looking for">
+	    </div> -->
+	</div>
+</header>
+
+
+<!-- END | Header -->
+<div id="gb-widget-2655" style="bottom: 14px; left: 16px; opacity: 1; transition: opacity 0.5s ease 0s; box-sizing: border-box; direction: ltr; text-align: left; position: fixed !important; z-index: 16000160 !important;"><div class="q8c6tt-2 fiKefb"><a size="50" href="https://wa.me/918328106802"  title="Chat with Us" target="_blank" color="#4dc247" id="getbutton-whatsapp" class="q8c6tt-0 jmDuqF"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" title="Chat with Us" style="width: 100%; height: 100%; fill: rgb(255, 255, 255); stroke: none;"><path d="M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39a.63.63 0 0 1-.315-.1c-.802-.402-1.504-.817-2.163-1.447-.545-.516-1.146-1.29-1.46-1.963a.426.426 0 0 1-.073-.215c0-.33.99-.945.99-1.49 0-.143-.73-2.09-.832-2.335-.143-.372-.214-.487-.6-.487-.187 0-.36-.043-.53-.043-.302 0-.53.115-.746.315-.688.645-1.032 1.318-1.06 2.264v.114c-.015.99.472 1.977 1.017 2.78 1.23 1.82 2.506 3.41 4.554 4.34.616.287 2.035.888 2.722.888.817 0 2.15-.515 2.478-1.318.13-.33.244-.73.244-1.088 0-.058 0-.144-.03-.215-.1-.172-2.434-1.39-2.678-1.39zm-2.908 7.593c-1.747 0-3.48-.53-4.942-1.49L7.793 24.41l1.132-3.337a8.955 8.955 0 0 1-1.72-5.272c0-4.955 4.04-8.995 8.997-8.995S25.2 10.845 25.2 15.8c0 4.958-4.04 8.998-8.998 8.998zm0-19.798c-5.96 0-10.8 4.842-10.8 10.8 0 1.964.53 3.898 1.546 5.574L5 27.176l5.974-1.92a10.807 10.807 0 0 0 16.03-9.455c0-5.958-4.842-10.8-10.802-10.8z"></path></svg></a></div></div>
+
+<div class="video-background-container">
+    <!-- Video Background -->
+    <video autoplay muted loop class="video-background">
+      <source src="images/bgcamera.mp4" type="video/mp4">
+    </video>
+
+    <!-- Your content on top of the video -->
+    <div class="content">
+        <div class="slider movie-items">
+			<div class="container">
+				<div class="row">
+					<!-- <div class="social-link">
+						<p>Follow us: </p>
+						<a href="#"><i class="ion-social-facebook"></i></a>
+						<a href="#"><i class="ion-social-twitter"></i></a>
+						<a href="#"><i class="ion-social-googleplus"></i></a>
+						<a href="#"><i class="ion-social-youtube"></i></a>
+					</div> -->
+					<div  class="slick-multiItemSlider">
+						
+						<div class="movie-item">
+							<a href="innerpage.html">
+							<div class="mv-img">
+								<img src="images/custom/main/1.jpg" alt="image"/>
+							</div>
+						</a>
+							
+						</div>
+						
+						<div class="movie-item">
+							<a href="innerpage.html">
+							<div class="mv-img">
+								<img src="images/custom/main/11.jpg" alt="" >
+							</div>
+						</a>
+							
+						</div>
+						<div class="movie-item">
+							<div class="mv-img">
+								<a href="#"><img src="images/custom/main/2.jpg" alt="" ></a>
+							</div>
+		
+						</div>
+						<div class="movie-item">
+							<div class="mv-img">
+								<a href="#"><img src="images/custom/main/3.jpg" alt="" ></a>
+							</div>
+		
+						</div>
+						<div class="movie-item">
+							<div class="mv-img">
+								<a href="#"><img src="images/custom/main/4.jpg" alt="" ></a>
+							</div>
+		
+						</div>
+						<div class="movie-item">
+							<div class="mv-img">
+								<a href="#"><img src="images/custom/main/5.jpg" alt="" ></a>
+							</div>
+		
+						</div>
+						<div class="movie-item">
+							<div class="mv-img">
+								<a href="#"><img src="images/custom/main/6.jpg" alt="" ></a>
+							</div>
+		
+						</div>
+						<div class="movie-item">
+							<div class="mv-img">
+								<a href="#"><img src="images/custom/main/7.jpg" alt="" ></a>
+							</div>
+		
+						</div>
+						<div class="movie-item">
+							<div class="mv-img">
+								<a href="#"><img src="images/custom/main/8.jpg" alt="" ></a>
+							</div>
+		
+						</div>
+						<div class="movie-item">
+							<div class="mv-img">
+								<a href="#"><img src="images/custom/main/9.jpg" alt="" ></a>
+							</div>
+		
+						</div>
+		
+		
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+</div>
+
+
+<div class="latestnew" style="padding: 40px;background: url(images/background1.jpg);background-position: inherit;background-size: cover;">
+	<div class="container">
+		<div class="row ipad-width">
+			<div class="col-md-12">
+				<div class="sidebar">
+	<a href="innerpage.html"><img src="images/addbanner1.gif" style="border-radius: 18px;"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="trailers">
+	<div class="container">
+		<div class="row ipad-width">
+			<div class="col-md-12">
+				<div class="title-hd">
+					<h2>Discover Top Destinations</h2>
+					<a href="#" class="viewall">View all <i class="ion-ios-arrow-right"></i></a>
+				</div>
+				<div class="videos">
+				 	 <div class="slider-for-2 video-ft">
+						<a href="innerpage.html">
+				 		<div>
+
+
+								<img class="item-video" src="images/slides/1.jpg" alt="photo" width="1920" height="450"/>
+					    </div></a>
+					    <div>
+
+							<img class="item-video" src="images/slides/2.jpg" alt="photo"/>
+					    </div>
+					    <div>
+
+							<img class="item-video" src="images/slides/3.jpg" alt="photo"/>
+					    </div>
+						<div>
+
+							<img class="item-video" src="images/slides/4.jpg" alt="photo"/>
+					    </div>
+					    <div>
+
+							<img class="item-video" src="images/slides/5.jpg" alt="photo"/>
+					    </div>
+					    <div>
+
+							<img class="item-video" src="images/slides/4.jpg" alt="photo"/>
+					    </div>
+
+
+					</div>
+					<div class="slider-nav-2 thumb-ft">
+						<div class="item">
+							<div class="trailer-img">
+								<img src="images/slides/1.jpg"  alt="photo by Barn Images" width="4096" height="2737">
+							</div>
+							<div class="trailer-infor">
+	                        	<h4 class="desc">First Birthday Deceoration</h4>
+	                        	<p>Latset</p>
+	                        </div>
+						</div>
+						<div class="item">
+							<div class="trailer-img">
+								<img src="images/slides/2.jpg"  alt="photo by Barn Images" width="350" height="200">
+							</div>
+							<div class="trailer-infor">
+	                        	<h4 class="desc">Reception Deceoration</h4>
+	                        	<p>2:37</p>
+	                        </div>
+						</div>
+						<div class="item">
+							<div class="trailer-img">
+								<img src="images/slides/3.jpg" alt="photo by Joshua Earle">
+							</div>
+							<div class="trailer-infor">
+	                        	<h4 class="desc">Exclusive Outdoor Deceoration</h4>
+	                        	<p>2:44</p>
+	                        </div>
+						</div>
+						<div class="item">
+							<div class="trailer-img">
+								<img src="images/slides/4.jpg" alt="photo by Alexander Dimitrov" width="100" height="56">
+							</div>
+							<div class="trailer-infor">
+	                        	<h4 class="desc">Outer Door Deceoration</h4>
+	                        	<p>2:43</p>
+	                        </div>
+						</div>
+						<div class="item">
+							<div class="trailer-img">
+								<img src="images/slides/5.jpg"  alt="photo by Wojciech Szaturski" width="100" height="56">
+							</div>
+							<div class="trailer-infor">
+	                        	<h4 class="desc">Beauty and Stage Deceoration</h4>
+	                        	<p>2: 32</p>
+	                        </div>
+						</div>
+						<div class="item">
+							<div class="trailer-img">
+								<img src="images/slides/4.jpg"  alt="photo by Wojciech Szaturski" width="360" height="189">
+							</div>
+							<div class="trailer-infor">
+	                        	<h4 class="desc">Indoor Deceoration</h4>
+	                        	<p>3:11</p>
+	                        </div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="slider movie-items banner4">
+	<div class="container">
+		<div class="row">
+			<div class="title-hd">
+				<h2 style="color: #0f2133;text-shadow: 1px 1px 17px #fff;">Pick Your Trail - As Per Your Interest</h2>
+				<a href="#" class="viewall">View all <i class="ion-ios-arrow-right"></i></a>
+			</div>
+	    	<div  class="slick-multiItemSlider1">
+	    		<div class="movie-item">
+	    			<a href="innerpage.html">
+						<div class="mv-img">
+	    				<img src="images/small/1.jpg" alt="" >
+	    			</div>
+
+				</a>
+	    		</div>
+
+				<div class="movie-item">
+					<a href="innerpage.html">
+	    			<div class="mv-img">
+	    				<img src="images/small/2.jpg" alt="" >
+	    			</div></a>
+
+	    		</div>
+				<div class="movie-item">
+	    			<div class="mv-img">
+	    				<a href="#"><img src="images/small/3.jpg" alt="" ></a>
+	    			</div>
+
+	    		</div>
+				<div class="movie-item">
+	    			<div class="mv-img">
+	    				<a href="#"><img src="images/small/4.jpg" alt="" ></a>
+	    			</div>
+
+	    		</div>
+				<div class="movie-item">
+	    			<div class="mv-img">
+	    				<a href="#"><img src="images/small/5.jpg" alt="" ></a>
+	    			</div>
+
+	    		</div>
+				<div class="movie-item">
+	    			<div class="mv-img">
+	    				<a href="#"><img src="images/small/6.jpg" alt="" ></a>
+	    			</div>
+
+	    		</div>
+				<div class="movie-item">
+	    			<div class="mv-img">
+	    				<a href="#"><img src="images/small/7.jpg" alt="" ></a>
+	    			</div>
+
+	    		</div>
+				<div class="movie-item">
+	    			<div class="mv-img">
+	    				<a href="#"><img src="images/small/8.jpg" alt="" ></a>
+	    			</div>
+
+	    		</div>
+				<div class="movie-item">
+	    			<div class="mv-img">
+	    				<a href="#"><img src="images/small/9.jpg" alt="" ></a>
+	    			</div>
+
+	    		</div>
+
+
+
+	    	</div>
+	    </div>
+	</div>
+</div>
+
+ <div class="movie-items">
+	<div class="container">
+		<div class="row ipad-width">
+			<div class="col-md-8">
+				<div class="title-hd">
+					<h2>In Decorations</h2>
+					<a href="#" class="viewall">View all <i class="ion-ios-arrow-right"></i></a>
+				</div>
+				<div class="tabs">
+					<ul class="tab-links">
+						<li class="active"><a href="#tab1">#Birthday</a></li>
+						<li><a href="#tab2"> #Anniversary</a></li>
+						<li><a href="#tab3">  #Kids</a></li>
+						<li><a href="#tab4"> #Baby Shower</a></li>
+					</ul>
+				    <div class="tab-content">
+				        <div id="tab1" class="tab active">
+				            <div class="row">
+				            	<div class="slick-multiItem">
+				            		<div class="slide-it">
+				            			<div class="movie-item">
+					            			<div class="mv-img">
+					            				<img src="images/small/12.jpg" alt="" width="185" height="284">
+					            			</div>
+					            			<div class="hvr-inner">
+					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            			</div>
+
+					            		</div>
+				            		</div>
+									<div class="slide-it">
+										<div class="movie-item">
+					            			<div class="mv-img">
+					            				<img src="images/small/13.jpg" alt="" width="185" height="284">
+					            			</div>
+					            			<div class="hvr-inner">
+					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            			</div>
+
+					            		</div>
+									</div>
+				            		<div class="slide-it">
+				            			<div class="movie-item">
+					            			<div class="mv-img">
+					            				<img src="images/small/14.jpg" alt="" width="185" height="284">
+					            			</div>
+					            			<div class="hvr-inner">
+					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            			</div>
+
+					            		</div>
+				            		</div>
+				            		<div class="slide-it">
+				            			<div class="movie-item">
+					            			<div class="mv-img">
+					            				<img src="images/small/15.jpg" alt="" width="185" height="284">
+					            			</div>
+					            			<div class="hvr-inner">
+					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            			</div>
+
+					            		</div>
+				            		</div>
+				            		<div class="slide-it">
+				            			<div class="movie-item">
+					            			<div class="mv-img">
+					            				<img src="images/small/16.jpg" alt="" width="185" height="284">
+					            			</div>
+					            			<div class="hvr-inner">
+					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            			</div>
+
+					            		</div>
+				            		</div>
+									<div class="slide-it">
+										<div class="movie-item">
+					            			<div class="mv-img">
+					            				<img src="images/small/17.jpg" alt="" width="185" height="284">
+					            			</div>
+					            			<div class="hvr-inner">
+					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            			</div>
+
+					            		</div>
+									</div>
+				            		<div class="slide-it">
+				            			<div class="movie-item">
+					            			<div class="mv-img">
+					            				<img src="images/small/12.jpg" alt="" width="185" height="284">
+					            			</div>
+					            			<div class="hvr-inner">
+					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            			</div>
+
+					            		</div>
+				            		</div>
+				            		<div class="slide-it">
+				            			<div class="movie-item">
+					            			<div class="mv-img">
+					            				<img src="images/small/13.jpg" alt="" width="185" height="284">
+					            			</div>
+					            			<div class="hvr-inner">
+					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            			</div>
+
+					            		</div>
+				            		</div>
+				            		<div class="slide-it">
+				            			<div class="movie-item">
+					            			<div class="mv-img">
+					            				<img src="images/small/14.jpg" alt="" width="185" height="284">
+					            			</div>
+					            			<div class="hvr-inner">
+					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            			</div>
+
+					            		</div>
+				            		</div>
+				            	</div>
+				            </div>
+				        </div>
+				        <div id="tab2" class="tab">
+				           <div class="row">
+				            	<div class="slick-multiItem">
+				            		<div class="slide-it">
+				            			<div class="movie-item">
+					            			<div class="mv-img">
+					            				<img src="images/uploads/mv-item5.jpg" alt="" width="185" height="284">
+					            			</div>
+					            			<div class="hvr-inner">
+					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            			</div>
+
+					            		</div>
+				            		</div>
+									<div class="slide-it">
+										<div class="movie-item">
+					            			<div class="mv-img">
+					            				<img src="images/uploads/mv-item6.jpg" alt="" width="185" height="284">
+					            			</div>
+					            			<div class="hvr-inner">
+					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            			</div>
+
+					            		</div>
+									</div>
+				            		<div class="slide-it">
+				            			<div class="movie-item">
+					            			<div class="mv-img">
+					            				<img src="images/uploads/mv-item7.jpg" alt="" width="185" height="284">
+					            			</div>
+					            			<div class="hvr-inner">
+					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            			</div>
+
+					            		</div>
+				            		</div>
+				            		<div class="slide-it">
+				            			<div class="movie-item">
+					            			<div class="mv-img">
+					            				<img src="images/uploads/mv-item8.jpg" alt="" width="185" height="284">
+					            			</div>
+					            			<div class="hvr-inner">
+					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            			</div>
+
+					            		</div>
+				            		</div>
+				            		<div class="slide-it">
+				            			<div class="movie-item">
+					            			<div class="mv-img">
+					            				<img src="images/uploads/mv-item3.jpg" alt="" width="185" height="284">
+					            			</div>
+					            			<div class="hvr-inner">
+					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            			</div>
+
+					            		</div>
+				            		</div>
+				            	</div>
+				            </div>
+				        </div>
+				        <div id="tab3" class="tab">
+				        	<div class="row">
+				            	<div class="slick-multiItem">
+				            		<div class="slide-it">
+				            			<div class="movie-item">
+					            			<div class="mv-img">
+					            				<img src="images/uploads/mv-item12.jpg" alt="" width="185" height="284">
+					            			</div>
+					            			<div class="hvr-inner">
+					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            			</div>
+
+					            		</div>
+				            		</div>
+									<div class="slide-it">
+										<div class="movie-item">
+					            			<div class="mv-img">
+					            				<img src="images/uploads/mv-item2.jpg" alt="" width="185" height="284">
+					            			</div>
+					            			<div class="hvr-inner">
+					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            			</div>
+
+					            		</div>
+									</div>
+				            		<div class="slide-it">
+				            			<div class="movie-item">
+					            			<div class="mv-img">
+					            				<img src="images/uploads/mv-item3.jpg" alt="" width="185" height="284">
+					            			</div>
+					            			<div class="hvr-inner">
+					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            			</div>
+
+					            		</div>
+				            		</div>
+				            		<div class="slide-it">
+				            			<div class="movie-item">
+					            			<div class="mv-img">
+					            				<img src="images/uploads/mv-item4.jpg" alt="" width="185" height="284">
+					            			</div>
+					            			<div class="hvr-inner">
+					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            			</div>
+
+					            		</div>
+				            		</div>
+				            		<div class="slide-it">
+				            			<div class="movie-item">
+					            			<div class="mv-img">
+					            				<img src="images/uploads/mv-item3.jpg" alt="" width="185" height="284">
+					            			</div>
+					            			<div class="hvr-inner">
+					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            			</div>
+
+					            		</div>
+				            		</div>
+				            	</div>
+				            </div>
+			       	 	</div>
+			       	 	<div id="tab4" class="tab">
+				        	<div class="row">
+				            	<div class="slick-multiItem">
+				            		<div class="slide-it">
+				            			<div class="movie-item">
+					            			<div class="mv-img">
+					            				<img src="images/uploads/mv-item5.jpg" alt="" width="185" height="284">
+					            			</div>
+					            			<div class="hvr-inner">
+					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            			</div>
+
+					            		</div>
+				            		</div>
+									<div class="slide-it">
+										<div class="movie-item">
+					            			<div class="mv-img">
+					            				<img src="images/uploads/mv-item6.jpg" alt="" width="185" height="284">
+					            			</div>
+					            			<div class="hvr-inner">
+					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            			</div>
+
+					            		</div>
+									</div>
+				            		<div class="slide-it">
+				            			<div class="movie-item">
+					            			<div class="mv-img">
+					            				<img src="images/uploads/mv-item7.jpg" alt="" width="185" height="284">
+					            			</div>
+					            			<div class="hvr-inner">
+					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            			</div>
+
+					            		</div>
+				            		</div>
+				            		<div class="slide-it">
+				            			<div class="movie-item">
+					            			<div class="mv-img">
+					            				<img src="images/uploads/mv-item8.jpg" alt="" width="185" height="284">
+					            			</div>
+					            			<div class="hvr-inner">
+					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            			</div>
+
+					            		</div>
+				            		</div>
+				            		<div class="slide-it">
+				            			<div class="movie-item">
+					            			<div class="mv-img">
+					            				<img src="images/uploads/mv-item3.jpg" alt="" width="185" height="284">
+					            			</div>
+					            			<div class="hvr-inner">
+					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            			</div>
+
+					            		</div>
+				            		</div>
+				            	</div>
+				            </div>
+			       	 	</div>
+				    </div>
+				</div>
+				<div class="title-hd">
+					<h2>Featured Decors</h2>
+					<a href="#" class="viewall">View all <i class="ion-ios-arrow-right"></i></a>
+				</div>
+				<div class="tabs">
+					<ul class="tab-links-2">
+						<li><a href="#tab21">#Splashing Pool</a></li>
+						<li class="active"><a href="#tab22"> #Dazzling Butterfly</a></li>
+						<li><a href="#tab23">  #High-powered Dinosaur</a></li>
+						<li><a href="#tab24"> #Disport football</a></li>
+					</ul>
+				    <div class="tab-content">
+				        <div id="tab21" class="tab">
+				            <div class="row">
+				            	<div class="slick-multiItem">
+				            		<div class="slide-it">
+				            			<div class="movie-item">
+					            			<div class="mv-img">
+					            				<img src="images/uploads/mv-item1.jpg" alt="" width="185" height="284">
+					            			</div>
+
+
+					            		</div>
+				            		</div>
+									<div class="slide-it">
+										<div class="movie-item">
+					            			<div class="mv-img">
+					            				<img src="images/uploads/mv-item2.jpg" alt="" width="185" height="284">
+					            			</div>
+					            			<div class="hvr-inner">
+					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            			</div>
+
+					            		</div>
+									</div>
+				            		<div class="slide-it">
+				            			<div class="movie-item">
+					            			<div class="mv-img">
+					            				<img src="images/uploads/mv-item3.jpg" alt="" width="185" height="284">
+					            			</div>
+					            			<div class="hvr-inner">
+					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            			</div>
+
+					            		</div>
+				            		</div>
+				            		<div class="slide-it">
+				            			<div class="movie-item">
+					            			<div class="mv-img">
+					            				<img src="images/uploads/mv-item4.jpg" alt="" width="185" height="284">
+					            			</div>
+					            			<div class="hvr-inner">
+					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            			</div>
+
+					            		</div>
+				            		</div>
+				            		<div class="slide-it">
+				            			<div class="movie-item">
+					            			<div class="mv-img">
+					            				<img src="images/uploads/mv-item3.jpg" alt="" width="185" height="284">
+					            			</div>
+					            			<div class="hvr-inner">
+					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            			</div>
+
+					            		</div>
+				            		</div>
+				            	</div>
+				            </div>
+				        </div>
+				        <div id="tab22" class="tab active">
+				           <div class="row">
+				            	<div class="slick-multiItem">
+				            		<div class="slide-it">
+				            			<div class="movie-item">
+					            			<div class="mv-img">
+					            				<img src="images/uploads/mv-item5.jpg" alt="" width="185" height="284">
+					            			</div>
+					            			<div class="hvr-inner">
+					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            			</div>
+
+					            		</div>
+				            		</div>
+									<div class="slide-it">
+										<div class="movie-item">
+					            			<div class="mv-img">
+					            				<img src="images/uploads/mv-item6.jpg" alt="" width="185" height="284">
+					            			</div>
+					            			<div class="hvr-inner">
+					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            			</div>
+
+					            		</div>
+									</div>
+				            		<div class="slide-it">
+				            			<div class="movie-item">
+					            			<div class="mv-img">
+					            				<img src="images/uploads/mv-item7.jpg" alt="" width="185" height="284">
+					            			</div>
+					            			<div class="hvr-inner">
+					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            			</div>
+
+					            		</div>
+				            		</div>
+				            		<div class="slide-it">
+				            			<div class="movie-item">
+					            			<div class="mv-img">
+					            				<img src="images/uploads/mv-item8.jpg" alt="" width="185" height="284">
+					            			</div>
+					            			<div class="hvr-inner">
+					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            			</div>
+
+					            		</div>
+				            		</div>
+				            		<div class="slide-it">
+				            			<div class="movie-item">
+					            			<div class="mv-img">
+					            				<img src="images/uploads/mv-item1.jpg" alt="" width="185" height="284">
+					            			</div>
+					            			<div class="hvr-inner">
+					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            			</div>
+
+					            		</div>
+				            		</div>
+									<div class="slide-it">
+										<div class="movie-item">
+					            			<div class="mv-img">
+					            				<img src="images/uploads/mv-item2.jpg" alt="" width="185" height="284">
+					            			</div>
+					            			<div class="hvr-inner">
+					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            			</div>
+
+					            		</div>
+									</div>
+				            		<div class="slide-it">
+				            			<div class="movie-item">
+					            			<div class="mv-img">
+					            				<img src="images/uploads/mv-item3.jpg" alt="" width="185" height="284">
+					            			</div>
+					            			<div class="hvr-inner">
+					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            			</div>
+
+					            		</div>
+				            		</div>
+				            		<div class="slide-it">
+				            			<div class="movie-item">
+					            			<div class="mv-img">
+					            				<img src="images/uploads/mv-item4.jpg" alt="" width="185" height="284">
+					            			</div>
+					            			<div class="hvr-inner">
+					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            			</div>
+
+					            		</div>
+				            		</div>
+				            		<div class="slide-it">
+				            			<div class="movie-item">
+					            			<div class="mv-img">
+					            				<img src="images/uploads/mv-item5.jpg" alt="" width="185" height="284">
+					            			</div>
+					            			<div class="hvr-inner">
+					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            			</div>
+
+					            		</div>
+				            		</div>
+									<div class="slide-it">
+										<div class="movie-item">
+					            			<div class="mv-img">
+					            				<img src="images/uploads/mv-item6.jpg" alt="" width="185" height="284">
+					            			</div>
+					            			<div class="hvr-inner">
+					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            			</div>
+
+					            		</div>
+									</div>
+				            	</div>
+				            </div>
+				        </div>
+				        <div id="tab23" class="tab">
+				        	<div class="row">
+				            	<div class="slick-multiItem">
+				            		<div class="slide-it">
+				            			<div class="movie-item">
+					            			<div class="mv-img">
+					            				<img src="images/uploads/mv-item1.jpg" alt="" width="185" height="284">
+					            			</div>
+					            			<div class="hvr-inner">
+					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            			</div>
+
+					            		</div>
+				            		</div>
+									<div class="slide-it">
+										<div class="movie-item">
+					            			<div class="mv-img">
+					            				<img src="images/uploads/mv-item2.jpg" alt="" width="185" height="284">
+					            			</div>
+					            			<div class="hvr-inner">
+					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            			</div>
+
+					            		</div>
+									</div>
+				            		<div class="slide-it">
+				            			<div class="movie-item">
+					            			<div class="mv-img">
+					            				<img src="images/uploads/mv-item3.jpg" alt="" width="185" height="284">
+					            			</div>
+					            			<div class="hvr-inner">
+					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            			</div>
+
+					            		</div>
+				            		</div>
+				            		<div class="slide-it">
+				            			<div class="movie-item">
+					            			<div class="mv-img">
+					            				<img src="images/uploads/mv-item4.jpg" alt="" width="185" height="284">
+					            			</div>
+					            			<div class="hvr-inner">
+					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            			</div>
+
+					            		</div>
+				            		</div>
+				            		<div class="slide-it">
+				            			<div class="movie-item">
+					            			<div class="mv-img">
+					            				<img src="images/uploads/mv-item5.jpg" alt="" width="185" height="284">
+					            			</div>
+					            			<div class="hvr-inner">
+					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            			</div>
+
+					            		</div>
+				            		</div>
+									<div class="slide-it">
+										<div class="movie-item">
+					            			<div class="mv-img">
+					            				<img src="images/uploads/mv-item6.jpg" alt="" width="185" height="284">
+					            			</div>
+					            			<div class="hvr-inner">
+					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            			</div>
+
+					            		</div>
+									</div>
+				            		<div class="slide-it">
+				            			<div class="movie-item">
+					            			<div class="mv-img">
+					            				<img src="images/uploads/mv-item7.jpg" alt="" width="185" height="284">
+					            			</div>
+					            			<div class="hvr-inner">
+					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            			</div>
+
+					            		</div>
+				            		</div>
+				            		<div class="slide-it">
+				            			<div class="movie-item">
+					            			<div class="mv-img">
+					            				<img src="images/uploads/mv-item8.jpg" alt="" width="185" height="284">
+					            			</div>
+					            			<div class="hvr-inner">
+					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            			</div>
+
+					            		</div>
+				            		</div>
+				            		<div class="slide-it">
+				            			<div class="movie-item">
+					            			<div class="mv-img">
+					            				<img src="images/uploads/mv-item3.jpg" alt="" width="185" height="284">
+					            			</div>
+					            			<div class="hvr-inner">
+					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            			</div>
+
+					            		</div>
+				            		</div>
+				            	</div>
+				            </div>
+			       	 	</div>
+			       	 	 <div id="tab24" class="tab">
+				        	<div class="row">
+				            	<div class="slick-multiItem">
+				            		<div class="slide-it">
+				            			<div class="movie-item">
+					            			<div class="mv-img">
+					            				<img src="images/uploads/mv-item5.jpg" alt="" width="185" height="284">
+					            			</div>
+					            			<div class="hvr-inner">
+					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            			</div>
+					            			<div class="title-in">
+					            				<h6><a href="#">Interstellar</a></h6>
+					            				<p><i class="ion-android-star"></i><span>7.4</span> /10</p>
+					            			</div>
+					            		</div>
+				            		</div>
+									<div class="slide-it">
+										<div class="movie-item">
+					            			<div class="mv-img">
+					            				<img src="images/uploads/mv-item6.jpg" alt="" width="185" height="284">
+					            			</div>
+					            			<div class="hvr-inner">
+					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            			</div>
+					            			<div class="title-in">
+					            				<h6><a href="#">The revenant</a></h6>
+					            				<p><i class="ion-android-star"></i><span>7.4</span> /10</p>
+					            			</div>
+					            		</div>
+									</div>
+				            		<div class="slide-it">
+				            			<div class="movie-item">
+					            			<div class="mv-img">
+					            				<img src="images/uploads/mv-item7.jpg" alt="" width="185" height="284">
+					            			</div>
+					            			<div class="hvr-inner">
+					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            			</div>
+					            			<div class="title-in">
+					            				<h6><a href="#">Die hard</a></h6>
+					            				<p><i class="ion-android-star"></i><span>7.4</span> /10</p>
+					            			</div>
+					            		</div>
+				            		</div>
+				            		<div class="slide-it">
+				            			<div class="movie-item">
+					            			<div class="mv-img">
+					            				<img src="images/uploads/mv-item8.jpg" alt="" width="185" height="284">
+					            			</div>
+					            			<div class="hvr-inner">
+					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            			</div>
+					            			<div class="title-in">
+					            				<h6><a href="#">The walk</a></h6>
+					            				<p><i class="ion-android-star"></i><span>7.4</span> /10</p>
+					            			</div>
+					            		</div>
+				            		</div>
+				            		<div class="slide-it">
+				            			<div class="movie-item">
+					            			<div class="mv-img">
+					            				<img src="images/uploads/mv-item3.jpg" alt="" width="185" height="284">
+					            			</div>
+					            			<div class="hvr-inner">
+					            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+					            			</div>
+					            			<div class="title-in">
+					            				<h6><a href="#">Die hard</a></h6>
+					            				<p><i class="ion-android-star"></i><span>7.4</span> /10</p>
+					            			</div>
+					            		</div>
+				            		</div>
+				            	</div>
+				            </div>
+			       	 	</div>
+				    </div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="sidebar">
+					<div class="ads">
+						<img src="images/gif.gif" alt="" width="336" height="450">
+					</div>
+					<div class="celebrities">
+						<h4 class="sb-title">Our Team</h4>
+						<div class="celeb-item">
+							<a href="#"><img src="images/slides/1.jpg" alt="" width="70" height="40"></a>
+							<div class="celeb-author">
+								<h6><a href="#">Samuel N. Jack</a></h6>
+								<span>--</span>
+							</div>
+						</div>
+						<div class="celeb-item">
+							<a href="#"><img src="images/slides/2.jpg" alt="" width="70" height="70"></a>
+							<div class="celeb-author">
+								<h6><a href="#">Benjamin Carroll</a></h6>
+								<span>-</span>
+							</div>
+						</div>
+						<div class="celeb-item">
+							<a href="#"><img src="images/slides/3.jpg" alt="" width="70" height="70"></a>
+							<div class="celeb-author">
+								<h6><a href="#">Beverly Griffin</a></h6>
+								<span>-</span>
+							</div>
+						</div>
+						<div class="celeb-item">
+							<a href="#"><img src="images/slides/4.jpg" alt="" width="70" height="70"></a>
+							<div class="celeb-author">
+								<h6><a href="#">Justin Weaver</a></h6>
+								<span>-</span>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="latestnew" style="padding: 40px;background: url(images/custom/bg12.jpg);background-position: inherit;background-size: contain;">
+	<div class="container">
+		<div class="row ipad-width">
+			<div class="col-md-12">
+				<div class="sidebar" style="margin-left: 0px;">
+	<a href="innerpage.html"><img src="images/add.png" style="width: 100%;"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- latest new v1 section-->
+
+<div class="slider sliderv2">
+	<div class="container">
+		<div class="row">
+	    	<div class="slider-single-item">
+	    		<div class="movie-item">
+	    			<div class="row">
+	    				<div class="col-md-8 col-sm-12 col-xs-12">
+	    					<div class="title-in">
+			    				<div class="cate">
+
+			    					<span class="blue"><a href="#">Birthday Decorations</a></span>
+			    				</div>
+
+			    				<h1><a href="#"><span>Kids 1st birthday party planners<br>
+									</span> Birthday decors</a></h1>
+								<div class="social-btn"><br/><br/><br/><br/><br/>
+									<h6>1st birthday party organisers in Hyderabad, 1st birthday party decorations in Hyderabad.</h6>
+
+								</div>
+
+			    				<div class="btn-transform transform-vertical">
+									<div><a href="innerpage.html" class="item item-1 redbtn">more detail</a></div>
+									<div><a href= "innerpage.html" class="item item-2 redbtn hvrbtn">more detail</a></div>
+								</div>
+			    			</div>
+	    				</div>
+	    				<div class="col-md-4 col-sm-12 col-xs-12">
+		    				<div class="mv-img-2">
+			    				<a href="innerpage.html"><img src="images/uploads/poster1.jpg" alt=""></a>
+			    			</div>
+		    			</div>
+	    			</div>
+	    		</div>
+
+				<div class="movie-item">
+	    			<div class="row">
+	    				<div class="col-md-8 col-sm-12 col-xs-12">
+	    					<div class="title-in">
+			    				<div class="cate">
+
+			    					<span class="blue"><a href="#">Anniversary Decoration</a></span>
+			    				</div>
+
+			    				<h1><a href="#"><span>1st Anniversary party planners<br>
+									</span> Anniversary Decoration</a></h1>
+								<div class="social-btn"><br/><br/><br/><br/><br/>
+									<h6>1st Anniversary party organisers in Hyderabad, Anniversary party decorations in Hyderabad.</h6>
+
+								</div>
+
+			    				<div class="btn-transform transform-vertical">
+									<div><a href="innerpage.html" class="item item-1 redbtn">more detail</a></div>
+									<div><a href= "innerpage.html" class="item item-2 redbtn hvrbtn">more detail</a></div>
+								</div>
+			    			</div>
+	    				</div>
+	    				<div class="col-md-4 col-sm-12 col-xs-12">
+		    				<div class="mv-img-2">
+			    				<a href="innerpage.html"><img src="images/uploads/poster3.jpg" alt=""></a>
+			    			</div>
+		    			</div>
+	    			</div>
+	    		</div>
+
+
+
+	    		<div class="movie-item">
+	    			<div class="row">
+	    				<div class="col-md-8 col-sm-12 col-xs-12">
+	    					<div class="title-in">
+			    				<div class="cate">
+
+			    					<span class="orange"><a href="#">Kids Decorations</a></span>
+			    				</div>
+			    				<h1><a href="#"><span>Planner -Your Personal<br>
+								</span> Kids Decorations</a></h1>
+								<div class="social-btn"><br/><br/><br/><br/><br/>
+									<h6>Our planner makes your Decoration booking a pleasure. Set the dates and pick your activities - we’ll guide you through the rest.</h6>
+									<!-- <a href="#" class="parent-btn"><i class="ion-play"></i> Watch Trailer</a>
+									<a href="#" class="parent-btn"><i class="ion-heart"></i> Add to Favorite</a>
+									<div class="hover-bnt">
+										<a href="#" class="parent-btn"><i class="ion-android-share-alt"></i>share</a>
+										<div class="hvr-item">
+											<a href="#" class="hvr-grow"><i class="ion-social-facebook"></i></a>
+											<a href="#" class="hvr-grow"><i class="ion-social-twitter"></i></a>
+											<a href="#" class="hvr-grow"><i class="ion-social-googleplus"></i></a>
+											<a href="#" class="hvr-grow"><i class="ion-social-youtube"></i></a>
+										</div>
+									</div>		 -->
+								</div>
+			    				<!-- <div class="mv-details">
+			    					<p><i class="ion-android-star"></i><span>7.4</span> /10</p>
+			    					<ul class="mv-infor">
+			    						<li>  Run Time: 2h21’ </li>
+			    						<li>  Rated: PG-13  </li>
+			    						<li>  Release: 1 May 2015</li>
+			    					</ul>
+			    				</div> -->
+			    				<div class="btn-transform transform-vertical">
+									<div><a href="#" class="item item-1 redbtn">more detail</a></div>
+									<div><a href= "#" class="item item-2 redbtn hvrbtn">more detail</a></div>
+								</div>
+
+			    			</div>
+	    				</div>
+	    				<div class="col-md-4 col-sm-12 col-xs-12">
+		    				<div class="mv-img-2">
+			    				<a href="#"><img src="images/uploads/poster2.jpg" alt=""></a>
+			    			</div>
+		    			</div>
+	    			</div>
+	    		</div>
+
+				<div class="movie-item">
+	    			<div class="row">
+	    				<div class="col-md-8 col-sm-12 col-xs-12">
+	    					<div class="title-in">
+			    				<div class="cate">
+
+			    					<span class="blue"><a href="#">Baby Shower Decoration</a></span>
+			    				</div>
+
+			    				<h1><a href="#"><span>Baby Shower party planners<br>
+									</span> Baby Shower Decoration</a></h1>
+								<div class="social-btn"><br/><br/><br/><br/><br/>
+									<h6>Baby Shower party organisers in Hyderabad, Baby Shower party decorations in Hyderabad.</h6>
+
+								</div>
+
+			    				<div class="btn-transform transform-vertical">
+									<div><a href="innerpage.html" class="item item-1 redbtn">more detail</a></div>
+									<div><a href= "innerpage.html" class="item item-2 redbtn hvrbtn">more detail</a></div>
+								</div>
+			    			</div>
+	    				</div>
+	    				<div class="col-md-4 col-sm-12 col-xs-12">
+		    				<div class="mv-img-2">
+			    				<a href="innerpage.html"><img src="images/uploads/poster4.jpg" alt=""></a>
+			    			</div>
+		    			</div>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </div>
+	</div>
+</div>
+
+
+<div class="latestnew" style="padding: 40px 40px 0px;background: url(images/uploads/slider-bg3.jpg);background-position: inherit;background-size: contain;">
+	<div class="container">
+		<div class="row ipad-width">
+			<div class="col-md-8">
+				<!-- <div class="ads">
+					<img src="images/uploads/ads2.png" alt="" width="728" height="106">
+				</div> -->
+				<div class="title-hd">
+					<h2>About Us</h2>
+				</div>
+				<div class="tabs">
+					<ul class="tab-links-3">
+						<li class="active"><a href="#tab31">#Movies </a></li>
+						<li><a href="#tab32"> #TV Shows </a></li>
+						<li><a href="#tab33">  # Celebs</a></li>
+					</ul>
+				    <div class="tab-content">
+				        <div id="tab31" class="tab active">
+				            <div class="row">
+				            	<div class="blog-item-style-1">
+				            		<img src="images/uploads/mv-it100.jpg" alt="" width="150" height="200">
+				            		<div class="blog-it-infor">
+				            			<h3><a href="#">Balloon Decoration at Home in Hyderabad for Birthday Anniversary Party</a></h3>
+				            			<h5 style="color: #fff;">Balloon Decoration at Home in Hyderabad for Birthday Anniversary Party</h5>
+				            			<p>Exclusive: Event Decorations are important part of parties and events. Birthday  Balloon Decoration in Hyderabad are not only an affordable affair but can also help in providing one with a simple solution of creativity. Balloon decoration add a perfect touch to your birthday party!</p>
+				            		</div>
+				            	</div>
+				            </div>
+				        </div>
+				        <div id="tab32" class="tab">
+				           <div class="row">
+				            	<div class="blog-item-style-1">
+				            		<img src="images/uploads/blog-it2.jpg" alt="" width="170" height="250">
+				            		<div class="blog-it-infor">
+				            			<h3><a href="#">Tab 2</a></h3>
+				            			<span class="time">13 hours ago</span>
+				            			<p>Exclusive: <span>Amazon Studios </span>has acquired Victoria Woodhull, with Oscar winning Room star <span>Brie Larson</span> polsed to produce, and play the first female candidate for the presidency of the United States. Amazon bought it in a pitch package deal. <span> Ben Kopit</span>, who wrote the Warner Bros film <span>Libertine</span> that has...</p>
+				            		</div>
+				            	</div>
+				            </div>
+				        </div>
+				        <div id="tab33" class="tab">
+				        	<div class="row">
+				            	<div class="blog-item-style-1">
+				            		<img src="images/uploads/blog-it1.jpg" alt="" width="170" height="250">
+				            		<div class="blog-it-infor">
+				            			<h3><a href="#">Tab 3</a></h3>
+				            			<span class="time">13 hours ago</span>
+				            			<p>Exclusive: <span>Amazon Studios </span>has acquired Victoria Woodhull, with Oscar winning Room star <span>Brie Larson</span> polsed to produce, and play the first female candidate for the presidency of the United States. Amazon bought it in a pitch package deal. <span> Ben Kopit</span>, who wrote the Warner Bros film <span>Libertine</span> that has...</p>
+				            		</div>
+				            	</div>
+				            </div>
+			       	 	</div>
+				    </div>
+				</div>
+
+			</div>
+			<div class="col-md-4">
+				<div class="sidebar">
+					<div class="sb-facebook sb-it">
+						<!-- <h4 class="sb-title">Find us on Facebook</h4> -->
+						<!-- <iframe src="#" data-src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftemplatespoint.net%2F%3Ffref%3Dts&tabs=timeline&width=300&height=315px&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=true&appId" width="300" height="315" style="border:none;overflow:hidden" ></iframe> -->
+						<div class="ads">
+							<img src="images/uploads/ads3.png" alt="" width="336" height="296">
+						</div>
+					</div>
+					<!-- <div class="sb-twitter sb-it">
+						<h4 class="sb-title">Tweet to us</h4>
+						<div class="ads">
+							<img src="images/uploads/ads2.png" alt="" width="336" height="296">
+						</div>
+					</div> -->
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--end of latest new v1 section-->
+
+
+<!-- footer section-->
+<footer class="ht-footer">
+	<div class="container">
+		<div class="flex-parent-ft">
+			<div class="flex-child-ft item1">
+				 <!-- <a href="index-2.html"><img class="logo" src="images/logo1.png" alt=""></a> -->
+				 <h6> office:<br/><br/></h6>
+				 <p><br>
+				Hyderabad, TS 500 001</p>
+				<p>Call us: <a href="#" style="color: #0f2133;">(+91) 78420 90940</a></p>
+			</div>
+			<div class="flex-child-ft item2">
+				<h4>Resources</h4>
+				<ul>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Blockbuster</a></li>
+					<li><a href="#">Contact Us</a></li>
+					<li><a href="#">Forums</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Help Center</a></li>
+				</ul>
+			</div>
+			<div class="flex-child-ft item3">
+				<h4>Legal</h4>
+				<ul>
+					<li><a href="#">Terms of Use</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Security</a></li>
+				</ul>
+			</div>
+			<div class="flex-child-ft item4">
+				<h4>Account</h4>
+				<ul>
+					<li><a href="#">My Account</a></li>
+					<li><a href="#">Watchlist</a></li>
+					<li><a href="#">Collections</a></li>
+					<li><a href="#">User Guide</a></li>
+				</ul>
+			</div>
+			<div class="flex-child-ft item5">
+				<h4>Newsletter</h4>
+				<p>Subscribe to our newsletter system now <br> to get latest news from us.</p>
+				<form action="#">
+					<input type="text" placeholder="Enter your email...">
+				</form>
+				<a href="#" class="btn">Subscribe now <i class="ion-ios-arrow-forward"></i></a>
+			</div>
+		</div>
+	</div>
+	<div class="ft-copyright">
+		<div class="ft-left">
+			<p><a target="_blank" href="#" style="color: #daff00;font-weight: 900;">© Reddy Events</a></p>
+		</div>
+		<div class="backtotop">
+			<p><a href="#" id="back-to-top" style="color: #daff00;font-weight: 900;">Back to top  <i class="ion-ios-arrow-thin-up"></i></a></p>
+		</div>
+	</div>
+</footer>
+
+<div class="modal" id="warangal">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+
+		<!-- Modal Header -->
+		<div class="modal-header">
+		  <h4 class="modal-title">Modal Heading warangal urban</h4>
+		  <button type="button" class="close" data-dismiss="modal">&times;</button>
+		</div>
+
+		<!-- Modal body -->
+		<div class="modal-body">
+		  Modal body..
+		</div>
+
+		<!-- Modal footer -->
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+		</div>
+
+	  </div>
+	</div>
+  </div>
+<!-- end of footer section-->
+
+<script src="js/jquery.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/plugins2.js"></script>
+<script src="js/custom.js"></script>
+
+
+
+</body>
+
+
+</html>
